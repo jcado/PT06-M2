@@ -9,7 +9,7 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
 
   }
@@ -58,6 +58,12 @@
       }
 
       .btn {
+        .estiloboton();
+      }
+
+      .btn:hover {
+        color: #182e4c;
+        background-color: #b8b8b8;
       }
     }
 
@@ -72,4 +78,49 @@
       }
     }
   }
+}
+
+.imgheader {
+  border-radius: 10px;
+  margin-top: 0.5%;
+  width: 100%;
+}
+
+@media screen and (max-width: @phone) {
+  .container.home {
+    padding: 0 1%;
+  }
+
+  .tecnologia,
+  .ondas {
+    display: none;
+  }
+
+  .home .music-images img {
+    width: 100%;
+    margin: 5% 0 0;
+  }
+
+  .home .actual {
+    padding: 0;
+    flex-direction: column-reverse;
+
+    .actual-img {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 1%;
+    }
+
+    .actual-text {
+      width: 100%;
+      margin-top: 1%;
+      padding: 15px;
+
+      .btn {
+        width: 100%;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
 }
